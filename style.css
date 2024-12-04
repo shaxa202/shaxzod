@@ -1,0 +1,64 @@
+/* Общие стили */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Verdana', sans-serif;  /* Меняем шрифт на менее привлекательный */
+}
+
+/* Header */
+header {
+    background-color: #f0f0f0;  /* Убираем яркие градиенты */
+    padding: 30px 0;  /* Уменьшаем отступы */
+}
+
+.text1 {
+    color: #666;  /* Меняем цвет текста на серый */
+}
+
+/* Card */
+.card {
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02);  /* Уменьшаем эффект при наведении */
+}
+
+/* Button */
+.btn {
+    background-color: #808080;  /* Меняем кнопку на серую */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;  /* Уменьшаем размер шрифта */
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    background-color: #606060;  /* Меняем цвет при наведении */
+}
+
+/* Footer */
+footer {
+    background-color: #616161;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 15px;
+    }
+    
+    header h1 {
+        font-size: 24px;  /* Уменьшаем размер шрифта */
+    }
+}
